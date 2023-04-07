@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Плаксин</title>
+</head>
+<body>
+
+    <script>
+        var massive_one = [21];
+        var z,v,c;
+        document.write("1 задание: ");
+
+        for (var i = 0; i < 21; i++) {
+            massive_one[i] = Math.floor(Math.random()*(20-1)+1);
+            document.write(massive_one[i], " ");
+        }
+        document.write("<br>");
+        document.write("2 задание: ");
+        document.write("<br>");
+
+        z = Math.min.apply(null, massive_one)
+        v = massive_one[19];
+        c = massive_one.indexOf(z);
+        document.write("Минимальный эллемент, предпоследний эллемент и индекс минимального эллемента массива: ", z, ',' ,v , ',' ,c);
+        document.write("<br>");
+
+        massive_one.splice(19, 1, z);
+        massive_one.splice(c, 1, v);
+
+
+        for (var i = 0; i < 21; i++) {
+            document.write(massive_one[i], " ");
+        }
+
+    </script>
+</body>
+</html>

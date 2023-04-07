@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Плаксин</title>
+</head>
+<body>
+
+    <script>
+       var fruits = ['apple', 'pineapple' ,'mango','melon','grape'];
+       var citrus = ['orange' ,'lemon' ,'lime'];
+        document.write('Задание А: ', fruits);
+        document.write("<br>");
+        document.write('Задание Б: ', citrus);
+        document.write("<br>");
+        fruits.push(citrus);
+        document.write('Задание В:', fruits);
+        document.write("<br>");
+        fruits.splice(3, 2, 'pear', 'cherry' , 'plum' , 'raspberry' , 'strawberry');
+        document.write('Задание Г: ', fruits);
+        document.write("<br>");
+        fruits.splice(8, 3,);
+        document.write('Задание Д: ', fruits);
+        document.write("<br>");
+        fruits.sort();
+        document.write('Задание Е: ', fruits);
+        document.write("<br>");
+        fruits.reverse();
+        document.write('Задание Ж: ', fruits);
+        document.write("<br>");
+        fruits.sort((a, b) => b.length - a.length);
+        document.write('Задание З: ', fruits);
+        
+    </script>
+</body>
+</html>

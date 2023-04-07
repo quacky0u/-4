@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Плаксин</title>
+</head>
+<body>
+
+    <script>
+        var massive_one = [11];
+        var massive_two = [11];
+        var REZ = [1];
+
+        for (var i = 0; i < 11; i++) {
+            massive_one[i] = i * (i + 1) / 2;
+            document.write(massive_one[i],'\xa0\xa0');
+        }
+        document.write("<br>");
+
+
+        for (var i = 0; i < 11; i++) {
+            massive_two[i] = Math.pow(i, 2);
+            document.write(massive_two[i], '\xa0\xa0',);
+        }
+        document.write("<br>");
+
+        for (var i = 0; i < 11; i++) {
+            REZ[i] = massive_one[i] + massive_two[i];
+            document.write(REZ[i], '\xa0\xa0');
+        }
+        document.write("<br>");
+
+        REZ.reverse();
+        document.write(REZ,);
+    </script>
+</body>
+</html>
